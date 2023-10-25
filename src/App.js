@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div>
-      {showClock ? <Clock /> : null}
+      {showClock ? <Clock showClock={showClock} /> : null}
       <button onClick={() => setShowClock(!showClock)}>Toggle Clock</button>
     </div>
   );
